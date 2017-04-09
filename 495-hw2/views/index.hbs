@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/semantic.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <script type="text/javascript" src="/javascripts/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="/javascripts/semantic.js"></script>
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+    <title>
+        CENG 495 HW2
+    </title>
+</head>
+
+<body>
+    <div id="content" class="sticky-wrapper">
+        <div class="ui grid">
+            <div class="eight wide column">
+                <img src="/images/metu.png" />
+            </div>
+            <div class="eight wide right aligned column">
+                <img src="/images/ceng.png" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui fluid container">
+        <div id="content" class="ui sixteen wide column centered page grid">
+
+            <div class="sixteen wide column">
+                <div class="ui raised segment">
+                    <div class="ui gray ribbon label">
+                        CLOUD COMPUTING HOMEWORK 2
+                    </div>
+                </div>
+            </div>
+
+            <div id="main_form" class="twelve wide column">
+                <div class="ui bottom attached active tab segment inttab">
+                    <form class="ui form" id="my_form" name="sendform" enctype="application/x-www-form-urlencoded" action="/end" method="post">
+                        <div class="field">
+                            <label>
+                                Add New Movie
+                            </label>
+                        </div>
+
+                        <div class="field">
+                            <label>
+                                Release Date:
+                            </label>
+                            <input id="id_date" type="date" name="releaseDate" class="i-field">
+                        </div>
+
+                        <div class="field">
+                            <label>
+                                Movie Name:
+                            </label>
+                            <input id="id_name" type="text" name="movieName" class="i-field">
+                        </div>
+
+                        <div class="field">
+                            <label>
+                                Tags:
+                            </label>
+                            <input id="id_tag" type="text" name="tags" class="i-field">
+                        </div>
+
+                        <div class="field">
+                            <label>
+                                Url:
+                            </label>
+                            <input id="id_url" type="url" name="url" class="i-field">
+                        </div>
+
+                        <div class="field">
+                            <label>
+                                Actors:
+                            </label>
+                            <input id="id_actors" type="text" name="actors" class="i-field">
+                        </div>
+
+                        <div class="field" id="add_div">
+                        </div>
+
+                        <div class="field">
+                            <button id="add_custom" class="ui button">Add extra fields</button>
+                        </div>
+
+                        <div class="field">
+                            <input id="id_index" type="hidden" name="indexValue" class="i-field" value="">
+                        </div>
+
+                        <div class="field">
+                            <input id="id_send" type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sixteen wide column center aligned page grid">
+                <div id="show_button" class="sixteen wide column">
+                    <button class="ui button">Show Add Options</button>
+                </div>
+            </div>
+
+            <div class="sixteen wide column center aligned page grid">
+                <div id="hide_button" class="sixteen wide column">
+                    <button class="ui button">Hide Add Options</button>
+                </div>
+            </div>
+
+
+            <div class="sixteen wide column center aligned page grid" id="attach_div">
+                <img id="loader" src="/images/ajax-loader.gif" />
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer" class="sticky-footer">
+    </div>
+</body>
+</html>

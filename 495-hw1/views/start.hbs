@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/semantic.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <script type="text/javascript" src="/javascripts/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="/javascripts/semantic.js"></script>
+    <title>
+        CENG 495 HW1
+    </title>
+</head>
+<body>
+    <div id="content" class="sticky-wrapper">
+        <div class="ui grid">
+            <div class="eight wide column">
+                <img src="/images/metu.png" />
+            </div>
+            <div class="eight wide right aligned column">
+                <img src="/images/ceng.png" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui container">
+    <div id="content" class="ui stackable centered page grid">
+        <div class="sixteen wide column">
+            <div class="ui raised segment">
+                <div class="ui gray ribbon label">
+                    CLOUD COMPUTING HOMEWORK 1
+                </div>
+            </div>
+        </div>
+
+        <div class="eight wide column">
+            <div class="ui bottom attached active tab segment inttab">
+                <form class="ui form" id="my_form" action="/end" method="post" enctype="application/x-www-form-urlencoded">
+
+                    <div class="field">
+                        <label>
+                            Amount:
+                        </label>
+                        <input id="amount" type="number" step="any" name="amount" class="i-field" placeholder="1.0">
+                    </div>
+
+                    <div class="field">
+                        <label>
+                            First Currency:
+                        </label>
+                        <select name="firstc" id="first_currency">
+                            <option value="AUD">Australian Dollar</option>
+                            <option value="BRL">Brazilian Real</option>
+                            <option value="GBP">British Pound</option>
+                            <option value="CAD">Canadian Dollar</option>
+                            <option value="CNY">Chinese Yuan Renminbi</option>
+                            <option value="CZK">Czech Koruna</option>
+                            <option value="DKK">Danish Krone</option>
+                            <option value="EUR">Euro</option>
+                            <option value="HKD">Hong Kong Dollar</option>
+                            <option value="HUF">Hungarian Forint</option>
+                            <option value="INR">Indian Rupee</option>
+                            <option value="IDR">Indonesian Rupiah</option>
+                            <option value="ILS">Israeli New Shekel</option>
+                            <option value="JPY">Japanese Yen</option>
+                            <option value="KRW">Korean Won</option>
+                            <option value="MYR">Malaysian Ringgit</option>
+                            <option value="MXN">Mexican Peso</option>
+                            <option value="NZD">New Zealand Dollar</option>
+                            <option value="NOK">Norwegian Krone</option>
+                            <option value="PHP">Philippine Peso</option>
+                            <option value="PLN">Polish Zloty</option>
+                            <option value="RUB">Russian Ruble</option>
+                            <option value="SGD">Singapore Dollar</option>
+                            <option value="ZAR">South African Rand</option>
+                            <option value="SEK">Swedish Krona</option>
+                            <option value="CHF">Swiss Franc</option>
+                            <option value="THB">Thai Baht</option>
+                            <option value="TRY">Turkish Lira</option>
+                            <option value="USD">US Dollar</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>
+                            Second Currency:
+                        </label>
+                        <select name="secondc" id="second_currency">
+                            <option value="AUD">Australian Dollar</option>
+                            <option value="BRL">Brazilian Real</option>
+                            <option value="GBP">British Pound</option>
+                            <option value="CAD">Canadian Dollar</option>
+                            <option value="CNY">Chinese Yuan Renminbi</option>
+                            <option value="CZK">Czech Koruna</option>
+                            <option value="DKK">Danish Krone</option>
+                            <option value="EUR">Euro</option>
+                            <option value="HKD">Hong Kong Dollar</option>
+                            <option value="HUF">Hungarian Forint</option>
+                            <option value="INR">Indian Rupee</option>
+                            <option value="IDR">Indonesian Rupiah</option>
+                            <option value="ILS">Israeli New Shekel</option>
+                            <option value="JPY">Japanese Yen</option>
+                            <option value="KRW">Korean Won</option>
+                            <option value="MYR">Malaysian Ringgit</option>
+                            <option value="MXN">Mexican Peso</option>
+                            <option value="NZD">New Zealand Dollar</option>
+                            <option value="NOK">Norwegian Krone</option>
+                            <option value="PHP">Philippine Peso</option>
+                            <option value="PLN">Polish Zloty</option>
+                            <option value="RUB">Russian Ruble</option>
+                            <option value="SGD">Singapore Dollar</option>
+                            <option value="ZAR">South African Rand</option>
+                            <option value="SEK">Swedish Krona</option>
+                            <option value="CHF">Swiss Franc</option>
+                            <option value="THB">Thai Baht</option>
+                            <option value="TRY">Turkish Lira</option>
+                            <option value="USD">US Dollar</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <input id="id_send" type="submit" value="Convert">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    <div id="footer" class="sticky-footer">
+    </div>
+</body>
+</html>
