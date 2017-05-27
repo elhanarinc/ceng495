@@ -89,97 +89,194 @@ mv result* student_results
 rm -rf o*
 
 GRADE=0
+
+diff student_results/result1_task1.txt ../outputs/result1_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result1_task2.txt ../outputs/result1_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result1_task3.txt ../outputs/result1_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+8))
+fi
+
+diff student_results/result2_task1.txt ../outputs/result2_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result2_task2.txt ../outputs/result2_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result2_task3.txt ../outputs/result2_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+8))
+fi
+
+diff student_results/result3_task1.txt ../outputs/result3_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result3_task2.txt ../outputs/result3_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result3_task3.txt ../outputs/result3_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+8))
+fi
+
+diff student_results/result4_task1.txt ../outputs/result4_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result4_task2.txt ../outputs/result4_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result4_task3.txt ../outputs/result4_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+8))
+fi
+
+diff student_results/result5_task1.txt ../outputs/result5_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result5_task2.txt ../outputs/result5_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+6))
+fi
+
+diff student_results/result5_task3.txt ../outputs/result5_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    GRADE=$((GRADE+8))
+fi
+
+DGRADE=0
+
+diff student_results/result1_task1.txt ../outputs_2/result1_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result1_task2.txt ../outputs_2/result1_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result1_task3.txt ../outputs_2/result1_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+8))
+fi
+
+diff student_results/result2_task1.txt ../outputs_2/result2_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result2_task2.txt ../outputs_2/result2_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result2_task3.txt ../outputs_2/result2_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+8))
+fi
+
+diff student_results/result3_task1.txt ../outputs_2/result3_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result3_task2.txt ../outputs_2/result3_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result3_task3.txt ../outputs_2/result3_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+8))
+fi
+
+diff student_results/result4_task1.txt ../outputs_2/result4_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result4_task2.txt ../outputs_2/result4_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result4_task3.txt ../outputs_2/result4_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+8))
+fi
+
+diff student_results/result5_task1.txt ../outputs_2/result5_task1.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result5_task2.txt ../outputs_2/result5_task2.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+6))
+fi
+
+diff student_results/result5_task3.txt ../outputs_2/result5_task3.txt | awk '$0=">"$0' &>/dev/null
+d=${PIPESTATUS[0]}
+if [ $d -eq 0 ]; then
+    DGRADE=$((DGRADE+8))
+fi
+
+if [ "$DGRADE" -ge "$GRADE" ]; then
+    GRADE=$DGRADE
+fi
+
 NUMBER=$1
-
-diff student_results/result1_task1.txt ../outputs/result1_task1.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result1_task2.txt ../outputs/result1_task2.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result1_task3.txt ../outputs/result1_task3.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+8))
-fi
-
-diff student_results/result2_task1.txt ../outputs/result2_task1.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result2_task2.txt ../outputs/result2_task2.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result2_task3.txt ../outputs/result2_task3.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+8))
-fi
-
-diff student_results/result3_task1.txt ../outputs/result3_task1.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result3_task2.txt ../outputs/result3_task2.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result3_task3.txt ../outputs/result3_task3.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+8))
-fi
-
-diff student_results/result4_task1.txt ../outputs/result4_task1.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result4_task2.txt ../outputs/result4_task2.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result4_task3.txt ../outputs/result4_task3.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+8))
-fi
-
-diff student_results/result5_task1.txt ../outputs/result5_task1.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result5_task2.txt ../outputs/result5_task2.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+6))
-fi
-
-diff student_results/result5_task3.txt ../outputs/result5_task3.txt | awk '$0=">"$0'
-d=${PIPESTATUS[0]}
-if [ $d -eq 0 ]; then
-    GRADE=$((GRADE+8))
-fi
 
 destdir=../results.txt
 
